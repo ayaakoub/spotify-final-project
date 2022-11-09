@@ -11,3 +11,8 @@ We chose this topic as our entire group is highly interested in music and wanted
 - What features are the most predictive in determining track popularity?
 - What are the optimal combination of features for popular tracks?
 - Are there any differences across genres?
+
+## Description of the communication protocols
+
+Our group will meet regularly during class times (Tuesdays and Thursdays from 7 to 9 pm). We will also be meeting on the weekend, with date and time being decided during our class time based on availability. We will be assigning separate tasks for completion and following up during our meetings. We also have a channel set up on slack for regular day-to-day communication. 
+
