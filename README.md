@@ -16,3 +16,6 @@ We chose this topic as our entire group is highly interested in music and wanted
 
 Our group will meet regularly during class times (Tuesdays and Thursdays from 7 to 9 pm). We will also be meeting on the weekend, with date and time being decided during our class time based on availability. We will be assigning separate tasks for completion and following up during our meetings. We also have a channel set up on slack for regular day-to-day communication. 
 
+## Data ERD
+https://app.quickdatabasediagrams.com/#/d/Fc0Y2R </br>
+![image](https://user-images.githubusercontent.com/107721712/202347548-5c6d9ba7-8e67-4a60-bda4-b2f5694f8fef.png)
