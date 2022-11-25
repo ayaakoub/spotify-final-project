@@ -19,3 +19,8 @@ Our group will meet regularly during class times (Tuesdays and Thursdays from 7 
 ## Data ERD
 https://app.quickdatabasediagrams.com/#/d/Fc0Y2R </br>
 ![image](https://user-images.githubusercontent.com/107721712/202347548-5c6d9ba7-8e67-4a60-bda4-b2f5694f8fef.png)
+
+
+## Link to Google Slides presentation
+Link:
+https://docs.google.com/presentation/d/1lWtTW_outLUK36EXIL17RH0IRR2bMdTED2p6CjRtJ0o/edit?usp=sharing
