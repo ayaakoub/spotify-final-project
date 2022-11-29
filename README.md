@@ -44,6 +44,14 @@ Data was sourced from Kaggle.com. It includes 14,000 different tracks from Spoti
   - time_signature: An estimated time signature. The time signature (meter) is a notational convention to specify how many beats are in each bar (or measure). The time signature ranges from 3 to 7 indicating time signatures of 3/4, to 7/4.
   - track_genre: The genre in which the track belongs
 
+## Machine Learning
+### Data Processing
+  - The target is to build a machine learning model to interpret a track is a hit song or not. After inspect the raw data, we decided to determine a track is a hit song or not base on it's popularity, if it's popularity is over 50 than it will be consider as a hit song. So first, we imported the raw CSV file into Panda dataframe. Then add a new column 'hit' to the dataframe and assign either 0 or 1 to the column for each track base on it's popukarity. 
+  - Next, we dropped the rows with non-popular genre such as 'comedy' and 'sleep' etc. 
+  - Then group similar genres and reduce total genre number to 13.
+  - Drop rows with null value.
+  - Drop 'track_genre' column.
+  - 
 
 ## Link to Google Slides presentation
 Link:
