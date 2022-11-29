@@ -55,8 +55,21 @@ Data was sourced from Kaggle.com. It includes 14,000 different tracks from Spoti
   - create a new datafram df2 which holds the features that will be use in the machine learning model.
   - Load dataframe df2 into sqlite table ('songs') and dataframe track_df into sqlite table ('trackinfo').
   
- ### Feature Selection
-  - 
+### Feature Engineering/Selection
+  - The features 'duration_ms', 'time_signature', 'key', 'mode' are removed, as we think as a common people, we woldn't know what time_signature, key and mode will mean to a track, and whether a track is popular or not is not determined by the duration_ms. So all these 4 features should'd make any impact to the hit status of a track.
+  - Since we will use OneHotEncoder to transform the categorical feature into binary feature, we grouped similar genres to reduce posible number of columns.
+  - StandardScaler from sklearn is used to scale the 'loudness' and 'tempo' columns 
+
+### Training and Testing sets
+  - The column 'hit' is set as our y value which is our target.
+  - Everything else except 'hit' and "track_id', is set as our x value, the independat features.
+  - then x and y are split into training and testing data sets using train_test_split from sklearn.
+
+### Model Choice
+  - 3 machine learning models are tested Neutral Network, Logistic Regression and Random forest.
+  - Neural Network is flexible, can be used on regression and classification problems. Good for nonlinear data with large number of inputs such as images. But Neural networks depend a lot on training data, and this leads to the problem of over-fitting and generalization.
+  - Logistic Regression is easy to set up and train and it is efficient if the data is linearly separable. But it fails to predict a continuous outcome,and it assumes linearity between the predicted (dependent) variable and the predictor (independent) variables, also it may not be accurate if sample size is too small.
+  - Random forest can perform both regression and classification tasks, works well with both categorical and continuous values, and good against overfitting. But Random Forests can be computationally intensive for large datasets and it is like a black box algorithm, you have very little control over what the model does. 
 
 ## Link to Google Slides presentation
 Link:
