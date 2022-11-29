@@ -20,7 +20,6 @@ Our group will meet regularly during class times (Tuesdays and Thursdays from 7 
 https://app.quickdatabasediagrams.com/#/d/Fc0Y2R </br>
 ![image](https://user-images.githubusercontent.com/107721712/202347548-5c6d9ba7-8e67-4a60-bda4-b2f5694f8fef.png)
 
-
 ## Data Source:
 Data was sourced from Kaggle.com. It includes 14,000 different tracks from Spotify API, approximately 1,000 tracks per different genre. And the raw data includes the following features:
 
@@ -44,6 +43,33 @@ Data was sourced from Kaggle.com. It includes 14,000 different tracks from Spoti
   - tempo: The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration
   - time_signature: An estimated time signature. The time signature (meter) is a notational convention to specify how many beats are in each bar (or measure). The time signature ranges from 3 to 7 indicating time signatures of 3/4, to 7/4.
   - track_genre: The genre in which the track belongs
+
+## Machine Learning
+### Data Processing
+  - The target is to build a machine learning model to interpret a track is a hit song or not. After inspect the raw data, we decided to determine a track is a hit song or not base on it's popularity, if it's popularity is over 50 than it will be consider as a hit song. So first, we imported the raw CSV file into Panda dataframe. Then add a new column 'hit' to the dataframe and assign either 0 or 1 to the column for each track base on it's popukarity. 
+  - Next, we dropped the rows with non-popular genre such as 'comedy' and 'sleep' etc. 
+  - Then group similar genres and reduce total genre number to 13.
+  - Drop rows with null value.
+  - Drop 'track_genre' column.
+  - Separate artists, album_name, track_name, track_id, duration_ms, time_signature, key, mode, and popularity columns into a new dataframe track_df as these columns will noy be used in the machine learning model.
+  - create a new datafram df2 which holds the features that will be use in the machine learning model.
+  - Load dataframe df2 into sqlite table ('songs') and dataframe track_df into sqlite table ('trackinfo').
+  
+### Feature Engineering/Selection
+  - The features 'duration_ms', 'time_signature', 'key', 'mode' are removed, as we think as a common people, we woldn't know what time_signature, key and mode will mean to a track, and whether a track is popular or not is not determined by the duration_ms. So all these 4 features should'd make any impact to the hit status of a track.
+  - Since we will use OneHotEncoder to transform the categorical feature into binary feature, we grouped similar genres to reduce posible number of columns.
+  - StandardScaler from sklearn is used to scale the 'loudness' and 'tempo' columns 
+
+### Training and Testing sets
+  - The column 'hit' is set as our y value which is our target.
+  - Everything else except 'hit' and "track_id', is set as our x value, the independat features.
+  - then x and y are split into training and testing data sets using train_test_split from sklearn.
+
+### Model Choice
+  - 3 machine learning models are tested Neutral Network, Logistic Regression and Random forest.
+  - Neural Network is flexible, can be used on regression and classification problems. Good for nonlinear data with large number of inputs such as images. But Neural networks depend a lot on training data, and this leads to the problem of over-fitting and generalization.
+  - Logistic Regression is easy to set up and train and it is efficient if the data is linearly separable. But it fails to predict a continuous outcome,and it assumes linearity between the predicted (dependent) variable and the predictor (independent) variables, also it may not be accurate if sample size is too small.
+  - Random forest can perform both regression and classification tasks, works well with both categorical and continuous values, and good against overfitting. But Random Forests can be computationally intensive for large datasets and it is like a black box algorithm, you have very little control over what the model does. 
 
 ## Link to Google Slides presentation
 Link:
