@@ -51,6 +51,11 @@ Data was sourced from Kaggle.com. It includes 14,000 different tracks from Spoti
   - Then group similar genres and reduce total genre number to 13.
   - Drop rows with null value.
   - Drop 'track_genre' column.
+  - Separate artists, album_name, track_name, track_id, duration_ms, time_signature, key, mode, and popularity columns into a new dataframe track_df as these columns will noy be used in the machine learning model.
+  - create a new datafram df2 which holds the features that will be use in the machine learning model.
+  - Load dataframe df2 into sqlite table ('songs') and dataframe track_df into sqlite table ('trackinfo').
+  
+ ### Feature Selection
   - 
 
 ## Link to Google Slides presentation
