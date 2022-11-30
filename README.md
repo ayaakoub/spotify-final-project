@@ -71,6 +71,16 @@ Data was sourced from Kaggle.com. It includes 14,000 different tracks from Spoti
   - Logistic Regression is easy to set up and train and it is efficient if the data is linearly separable. But it fails to predict a continuous outcome,and it assumes linearity between the predicted (dependent) variable and the predictor (independent) variables, also it may not be accurate if sample size is too small.
   - Random forest can perform both regression and classification tasks, works well with both categorical and continuous values, and good against overfitting. But Random Forests can be computationally intensive for large datasets and it is like a black box algorithm, you have very little control over what the model does. 
 
+## Dashboard
+Tools used:
+- HTML
+- JS
+- CSS
+- Flask
+- Heroku
+- SQLAlchemy
+- Tableau
+
 ## Link to Google Slides presentation
 Link:
 https://docs.google.com/presentation/d/1lWtTW_outLUK36EXIL17RH0IRR2bMdTED2p6CjRtJ0o/edit?usp=sharing
