@@ -77,10 +77,10 @@ Tools used:
 - JS
 - CSS
 - Flask
-- Heroku
 - SQLAlchemy
 - Tableau
 
+![image](https://user-images.githubusercontent.com/107721712/205207779-2253d087-49f4-44ff-9303-01c8f29bdb45.png)</br>
 ## Link to Google Slides presentation
 Link:
 https://docs.google.com/presentation/d/1lWtTW_outLUK36EXIL17RH0IRR2bMdTED2p6CjRtJ0o/edit?usp=sharing
