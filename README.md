@@ -80,7 +80,7 @@ Data was sourced from Kaggle.com. It includes 14,000 different tracks from Spoti
   - Logistic Regression
     The Logistic model shows a accuracy score of 74%.
     
-    ![image](https://user-images.githubusercontent.com/108709071/205805035-b6335544-80fa-4d7e-abd4-63f58734551e.png)
+    ![image](https://user-images.githubusercontent.com/108709071/205805497-a045e1e5-be3f-4fe8-b25f-b4e4262a358c.png)
 
   - Random Forest
     The Random Forest model has the highest accuracy score of 82%.
