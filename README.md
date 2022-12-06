@@ -89,7 +89,11 @@ Data was sourced from Kaggle.com. It includes 14,000 different tracks from Spoti
 
 ### Summary
   - According to the accuracy scores above, we can see that the Random Forest model has the highest accuracy of 82%. We can say that the Random Forest model is pretty accurate to determine whether a track is a hit song or not.
-  - 
+  - From the importance test, we can see that 'acousticness', 'loudness', 'danceability', 'valence', 'tempo', 'speechiness', 'energy', 'liveness', 'instrumentalness' are all similar importance, and 'explicit' is not as important as other features.
+  - The importance between different genres are ranging from 0.0027 to 0.0141, with genre_Jazz_Blues being the lowest and genre_Pop being the highest
+  
+  ![image](https://user-images.githubusercontent.com/108709071/205806839-75495664-7163-4cae-b555-176103e964d6.png)
+
 ## Dashboard
 Tools used:
 - HTML
