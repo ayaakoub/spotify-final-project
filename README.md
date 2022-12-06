@@ -75,7 +75,13 @@ Data was sourced from Kaggle.com. It includes 14,000 different tracks from Spoti
   - Neural Network
     At first, We started the neural Network model with 2 hidden layers, 54 neurons in 1st layer and 30 neurons in 2nd layers, got a accuracy score of 74%. Then we added a 3rd hidden layer with 15 neurons and improved the accuracy score to 75%.
     
+    ![image](https://user-images.githubusercontent.com/108709071/205804759-9795578f-71c8-4167-952e-4556a4926e6c.png)
+
+  - Logistic Regression
+    The Logistic model shows a accuracy score of 74%.
     
+  - Random Forest
+    The Random Forest model has the highest accuracy score of 82%.
 
 ## Dashboard
 Tools used:
