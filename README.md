@@ -92,7 +92,7 @@ Data was sourced from Kaggle.com. It includes 14,000 different tracks from Spoti
   - From the importance test, we can see that 'acousticness', 'loudness', 'danceability', 'valence', 'tempo', 'speechiness', 'energy', 'liveness', 'instrumentalness' are of similar importance, being 0.10 or more, and 'explicit' is not as important as other features with only 0.007.
   - The importance between different genres are ranging from 0.0027 to 0.0141, with genre_Jazz_Blues being the lowest and genre_Pop being the highest
   
-  ![image](https://user-images.githubusercontent.com/108709071/205806839-75495664-7163-4cae-b555-176103e964d6.png)
+  ![image](https://user-images.githubusercontent.com/108709071/205808504-f9c87b37-fcb7-4c36-92c0-2ed56d902fee.png)
   
   
 ## Dashboard
