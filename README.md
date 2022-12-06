@@ -65,11 +65,17 @@ Data was sourced from Kaggle.com. It includes 14,000 different tracks from Spoti
   - Everything else except 'hit' and "track_id', is set as our x value, the independat features.
   - then x and y are split into training and testing data sets using train_test_split from sklearn.
 
-### Model Choice
+### Model Tested
   - 3 machine learning models are tested Neutral Network, Logistic Regression and Random forest.
   - Neural Network is flexible, can be used on regression and classification problems. Good for nonlinear data with large number of inputs such as images. But Neural networks depend a lot on training data, and this leads to the problem of over-fitting and generalization.
   - Logistic Regression is easy to set up and train and it is efficient if the data is linearly separable. But it fails to predict a continuous outcome,and it assumes linearity between the predicted (dependent) variable and the predictor (independent) variables, also it may not be accurate if sample size is too small.
   - Random forest can perform both regression and classification tasks, works well with both categorical and continuous values, and good against overfitting. But Random Forests can be computationally intensive for large datasets and it is like a black box algorithm, you have very little control over what the model does. 
+
+### Accuracy Score
+  - Neural Network
+    At first, We started the neural Network model with 2 hidden layers, 54 neurons in 1st layer and 30 neurons in 2nd layers, got a accuracy score of 74%. Then we added a 3rd hidden layer with 15 neurons and improved the accuracy score to 75%.
+    
+    
 
 ## Dashboard
 Tools used:
