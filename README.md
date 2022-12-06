@@ -71,6 +71,22 @@ Data was sourced from Kaggle.com. It includes 14,000 different tracks from Spoti
   - Logistic Regression is easy to set up and train and it is efficient if the data is linearly separable. But it fails to predict a continuous outcome,and it assumes linearity between the predicted (dependent) variable and the predictor (independent) variables, also it may not be accurate if sample size is too small.
   - Random forest can perform both regression and classification tasks, works well with both categorical and continuous values, and good against overfitting. But Random Forests can be computationally intensive for large datasets and it is like a black box algorithm, you have very little control over what the model does. 
 
+### Accuracy Score
+  - Neural Network
+    At first, We started the neural Network model with 2 hidden layers, 54 neurons in 1st layer and 30 neurons in 2nd layers, got a accuracy score of 74%. Then we added a 3rd hidden layer with 15 neurons and improved the accuracy score to 75%.
+    
+    ![image](https://user-images.githubusercontent.com/108709071/205804759-9795578f-71c8-4167-952e-4556a4926e6c.png)
+
+  - Logistic Regression
+    The Logistic model shows a accuracy score of 74%.
+    
+    ![image](https://user-images.githubusercontent.com/108709071/205805035-b6335544-80fa-4d7e-abd4-63f58734551e.png)
+
+  - Random Forest
+    The Random Forest model has the highest accuracy score of 82%.
+    
+    ![image](https://user-images.githubusercontent.com/108709071/205805086-99e40382-f2b0-4f27-b7da-9e8c48fa262b.png)
+
 ## Dashboard
 Tools used:
 - HTML
