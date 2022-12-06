@@ -87,6 +87,9 @@ Data was sourced from Kaggle.com. It includes 14,000 different tracks from Spoti
     
     ![image](https://user-images.githubusercontent.com/108709071/205805541-e0271ff4-0bef-4c46-8a9c-2e319a6d6332.png)
 
+### Summary
+  - According to the accuracy scores above, we can see that the Random Forest model has the highest accuracy of 82%. We can say that the Random Forest model is pretty accurate to determine whether a track is a hit song or not.
+  - 
 ## Dashboard
 Tools used:
 - HTML
