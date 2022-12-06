@@ -85,7 +85,7 @@ Data was sourced from Kaggle.com. It includes 14,000 different tracks from Spoti
   - Random Forest
     The Random Forest model has the highest accuracy score of 82%.
     
-    
+    ![image](https://user-images.githubusercontent.com/108709071/205805086-99e40382-f2b0-4f27-b7da-9e8c48fa262b.png)
 
 ## Dashboard
 Tools used:
