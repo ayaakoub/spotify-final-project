@@ -16,6 +16,7 @@ We chose this topic as our entire group is highly interested in music and wanted
 
 Our group will meet regularly during class times (Tuesdays and Thursdays from 7 to 9 pm). We will also be meeting on the weekend, with date and time being decided during our class time based on availability. We will be assigning separate tasks for completion and following up during our meetings. We also have a channel set up on slack for regular day-to-day communication. 
 
+
 ## Data ERD
 https://app.quickdatabasediagrams.com/#/d/Fc0Y2R </br>
 ![image](https://user-images.githubusercontent.com/107721712/202347548-5c6d9ba7-8e67-4a60-bda4-b2f5694f8fef.png)
@@ -44,6 +45,10 @@ Data was sourced from Kaggle.com. It includes 14,000 different tracks from Spoti
   - time_signature: An estimated time signature. The time signature (meter) is a notational convention to specify how many beats are in each bar (or measure). The time signature ranges from 3 to 7 indicating time signatures of 3/4, to 7/4.
   - track_genre: The genre in which the track belongs
 
+## Data Exploration 
+We used Python code to examine the records. For example, we examined how many tracks were in each type of genre, which ones were underrepresented? Which features likely had no bearing on whether it was a hit (such as key or tempo)? How many tracks could be removed from various genres that were not likely to be musical “hits” such as comedy?
+
+
 ## Machine Learning
 ### Data Processing
   - The target is to build a machine learning model to interpret a track is a hit song or not. After inspect the raw data, we decided to determine a track is a hit song or not base on it's popularity, if it's popularity is over 50 than it will be consider as a hit song. So first, we imported the raw CSV file into Panda dataframe. Then add a new column 'hit' to the dataframe and assign either 0 or 1 to the column for each track base on it's popukarity. 
@@ -65,36 +70,40 @@ Data was sourced from Kaggle.com. It includes 14,000 different tracks from Spoti
   - Everything else except 'hit' and "track_id', is set as our x value, the independat features.
   - then x and y are split into training and testing data sets using train_test_split from sklearn.
 
-### Model Tested
+### Model Choice
   - 3 machine learning models are tested Neutral Network, Logistic Regression and Random forest.
   - Neural Network is flexible, can be used on regression and classification problems. Good for nonlinear data with large number of inputs such as images. But Neural networks depend a lot on training data, and this leads to the problem of over-fitting and generalization.
   - Logistic Regression is easy to set up and train and it is efficient if the data is linearly separable. But it fails to predict a continuous outcome,and it assumes linearity between the predicted (dependent) variable and the predictor (independent) variables, also it may not be accurate if sample size is too small.
   - Random forest can perform both regression and classification tasks, works well with both categorical and continuous values, and good against overfitting. But Random Forests can be computationally intensive for large datasets and it is like a black box algorithm, you have very little control over what the model does. 
 
-### Accuracy Score
+### Result of Analysis
   - Neural Network
     At first, We started the neural Network model with 2 hidden layers, 54 neurons in 1st layer and 30 neurons in 2nd layers, got a accuracy score of 74%. Then we added a 3rd hidden layer with 15 neurons and improved the accuracy score to 75%.
     
-    ![image](https://user-images.githubusercontent.com/108709071/205804759-9795578f-71c8-4167-952e-4556a4926e6c.png)
+    ![image](https://user-images.githubusercontent.com/108709071/205805423-29ec9f0d-4452-4d63-8b27-9ec086bbb482.png)
 
   - Logistic Regression
     The Logistic model shows a accuracy score of 74%.
     
-    ![image](https://user-images.githubusercontent.com/108709071/205805035-b6335544-80fa-4d7e-abd4-63f58734551e.png)
+    ![image](https://user-images.githubusercontent.com/108709071/205805497-a045e1e5-be3f-4fe8-b25f-b4e4262a358c.png)
 
   - Random Forest
     The Random Forest model has the highest accuracy score of 82%.
     
-    ![image](https://user-images.githubusercontent.com/108709071/205805086-99e40382-f2b0-4f27-b7da-9e8c48fa262b.png)
+    ![image](https://user-images.githubusercontent.com/108709071/205805541-e0271ff4-0bef-4c46-8a9c-2e319a6d6332.png)
 
-### Summary
   - According to the accuracy scores above, we can see that the Random Forest model has the highest accuracy of 82%. We can say that the Random Forest model is pretty accurate to determine whether a track is a hit song or not.
   - From the importance test, we can see that 'acousticness', 'loudness', 'danceability', 'valence', 'tempo', 'speechiness', 'energy', 'liveness', 'instrumentalness' are of similar importance, being 0.10 or more, and 'explicit' is not as important as other features with only 0.007.
   - The importance between different genres are ranging from 0.0027 to 0.0141, with genre_Jazz_Blues being the lowest and genre_Pop being the highest
   
-  ![image](https://user-images.githubusercontent.com/108709071/205808504-f9c87b37-fcb7-4c36-92c0-2ed56d902fee.png)
+  ![image](https://user-images.githubusercontent.com/108709071/205806839-75495664-7163-4cae-b555-176103e964d6.png)
   
-  
+### Recommandations for Future Analysis
+  - Bring in larger dataset
+  - testing on different years data
+  - Combining genres
+  - testing with more other machine learning models
+
 ## Dashboard
 Tools used:
 - HTML
