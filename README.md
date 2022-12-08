@@ -16,6 +16,7 @@ We chose this topic as our entire group is highly interested in music and wanted
 
 Our group will meet regularly during class times (Tuesdays and Thursdays from 7 to 9 pm). We will also be meeting on the weekend, with date and time being decided during our class time based on availability. We will be assigning separate tasks for completion and following up during our meetings. We also have a channel set up on slack for regular day-to-day communication. 
 
+
 ## Data ERD
 https://app.quickdatabasediagrams.com/#/d/Fc0Y2R </br>
 ![image](https://user-images.githubusercontent.com/107721712/202347548-5c6d9ba7-8e67-4a60-bda4-b2f5694f8fef.png)
@@ -43,6 +44,10 @@ Data was sourced from Kaggle.com. It includes 14,000 different tracks from Spoti
   - tempo: The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration
   - time_signature: An estimated time signature. The time signature (meter) is a notational convention to specify how many beats are in each bar (or measure). The time signature ranges from 3 to 7 indicating time signatures of 3/4, to 7/4.
   - track_genre: The genre in which the track belongs
+
+## Data Exploration 
+We used Python code to examine the records. For example, we examined how many tracks were in each type of genre, which ones were underrepresented? Which features likely had no bearing on whether it was a hit (such as key or tempo)? How many tracks could be removed from various genres that were not likely to be musical “hits” such as comedy?
+
 
 ## Machine Learning
 ### Data Processing
