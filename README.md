@@ -76,7 +76,7 @@ We used Python code to examine the records. For example, we examined how many tr
   - Logistic Regression is easy to set up and train and it is efficient if the data is linearly separable. But it fails to predict a continuous outcome,and it assumes linearity between the predicted (dependent) variable and the predictor (independent) variables, also it may not be accurate if sample size is too small.
   - Random forest can perform both regression and classification tasks, works well with both categorical and continuous values, and good against overfitting. But Random Forests can be computationally intensive for large datasets and it is like a black box algorithm, you have very little control over what the model does. 
 
-### Accuracy Score
+### Result of Analysis
   - Neural Network
     At first, We started the neural Network model with 2 hidden layers, 54 neurons in 1st layer and 30 neurons in 2nd layers, got a accuracy score of 74%. Then we added a 3rd hidden layer with 15 neurons and improved the accuracy score to 75%.
     
@@ -92,12 +92,17 @@ We used Python code to examine the records. For example, we examined how many tr
     
     ![image](https://user-images.githubusercontent.com/108709071/205805541-e0271ff4-0bef-4c46-8a9c-2e319a6d6332.png)
 
-### Summary
   - According to the accuracy scores above, we can see that the Random Forest model has the highest accuracy of 82%. We can say that the Random Forest model is pretty accurate to determine whether a track is a hit song or not.
   - From the importance test, we can see that 'acousticness', 'loudness', 'danceability', 'valence', 'tempo', 'speechiness', 'energy', 'liveness', 'instrumentalness' are of similar importance, being 0.10 or more, and 'explicit' is not as important as other features with only 0.007.
   - The importance between different genres are ranging from 0.0027 to 0.0141, with genre_Jazz_Blues being the lowest and genre_Pop being the highest
   
   ![image](https://user-images.githubusercontent.com/108709071/205806839-75495664-7163-4cae-b555-176103e964d6.png)
+  
+### Recommandations for Future Analysis
+  - Bring in larger dataset
+  - testing on different years data
+  - Combining genres
+  - testing with more other machine learning models
 
 ## Dashboard
 Tools used:
